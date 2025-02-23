@@ -10,7 +10,7 @@ table {
   font-size: $type-size-6;
   border-collapse: collapse;
   overflow-x: auto;
-
+  table-layout: fixed;
   & + table {
     margin-top: 1em;
   }
@@ -19,16 +19,20 @@ table {
 thead {
   background-color: $border-color;
   border-bottom: 2px solid mix(#000, $border-color, 25%);
+  width: 100%;
+}
+tbody {
+  width: 100%;
 }
 
 th {
-  padding: 0.5em;
+  padding: 8px 12px;
   font-weight: bold;
   text-align: left;
 }
 
 td {
-  padding: 0.5em;
+  padding: 8px 12px;
   border-bottom: 1px solid mix(#000, $border-color, 25%);
 }
 
@@ -36,4 +40,5 @@ tr,
 td,
 th {
   vertical-align: middle;
+  font-size: 16px;
 }
