@@ -70,7 +70,7 @@ body {
 
 .page__title {
   margin-top: 0;
-  line-height: 1;
+  line-height: 1.5;
 
   a {
     color: $text-color;
@@ -119,7 +119,7 @@ body {
   li,
   dl {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
   }
 
   /* paragraph indents */
@@ -239,6 +239,9 @@ body {
   }
 }
 
+.color_yellow {
+  color: #ffff00;
+}
 .page__hero-image {
   width: 100%;
   height: auto;
