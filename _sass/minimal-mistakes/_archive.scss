@@ -20,10 +20,18 @@
 
 .archive__item {
   position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 
   a {
     position: relative;
     z-index: 10;
+    font-size: 20px;
+    line-height: 1.5;
   }
 
   a[rel="permalink"] {
@@ -51,7 +59,7 @@
   text-overflow: ellipsis;
 
   a[rel="permalink"]::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -74,7 +82,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: 14px;
 
   & + p {
     text-indent: 0;
@@ -127,7 +135,7 @@
 .list__item {
   .page__meta {
     margin: 0 0 4px;
-    font-size: 0.6em;
+    font-size: 14px;
   }
 }
 
@@ -150,7 +158,7 @@
 }
 
 .grid__item {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 
   @include breakpoint($small) {
     float: left;
@@ -168,29 +176,17 @@
   }
 
   @include breakpoint($medium) {
-    margin-left: 0; /* override margin*/
-    margin-right: 0; /* override margin*/
-    width: span(3 of 12);
+    margin-left: 0; /* override margin */
+    margin-right: 0; /* override margin */
+    width: span(6 of 12);
+    border: 1px solid rgb(60.45, 63.45, 69.45);
+    padding: 12px 16px;
+    border-radius: 5px;
 
     &:nth-child(2n + 1) {
-      clear: none;
-    }
-
-    &:nth-child(4n + 1) {
       clear: both;
     }
-
-    &:nth-child(4n + 2) {
-      clear: none;
-      margin-left: gutter(1 of 12);
-    }
-
-    &:nth-child(4n + 3) {
-      clear: none;
-      margin-left: gutter(1 of 12);
-    }
-
-    &:nth-child(4n + 4) {
+    &:nth-child(2n + 2) {
       clear: none;
       margin-left: gutter(1 of 12);
     }
@@ -198,7 +194,8 @@
 
   .page__meta {
     margin: 0 0 4px;
-    font-size: 0.6em;
+    font-size: 14px;
+    line-height: 1.8;
   }
 
   .page__meta-sep {
@@ -210,8 +207,11 @@
   }
 
   .archive__item-title {
-    margin-top: 0.5em;
-    font-size: $type-size-5;
+    margin-top: 0;
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-word;
   }
 
   .archive__item-excerpt {
@@ -285,7 +285,7 @@
   }
 
   a.btn::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -311,7 +311,7 @@
     }
 
     a.btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -352,7 +352,7 @@
     }
 
     a.btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -396,7 +396,7 @@
     }
 
     a.btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -442,7 +442,7 @@
    Wide Pages
    ========================================================================== */
 
-  .wide {
+.wide {
   .archive {
     @include breakpoint($large) {
       padding-right: 0;
@@ -457,7 +457,7 @@
 /* Place inside a single layout */
 
 .layout--single {
-	.feature__wrapper {
-		display: inline-block;
-	}
+  .feature__wrapper {
+    display: inline-block;
+  }
 }

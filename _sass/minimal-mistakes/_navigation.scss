@@ -25,15 +25,18 @@
   ol {
     padding: 0;
     list-style: none;
-    font-size: $type-size-6;
+    font-size: 16px;
 
     @include breakpoint($large) {
-      float: right;
       width: calc(100% - #{$right-sidebar-width-narrow});
+      margin: 0 auto;
+      margin-top: 15px;
     }
 
     @include breakpoint($x-large) {
       width: calc(100% - #{$right-sidebar-width});
+      margin: 0 auto;
+      margin-top: 15px;
     }
   }
 
@@ -55,6 +58,7 @@
   float: left;
   margin-top: 1em;
   padding-top: 1em;
+  margin-bottom: 2em;
   width: 100%;
 
   ul {
@@ -568,6 +572,6 @@
   }
 
   li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
+    padding-left: 3.25rem;
   }
 }
