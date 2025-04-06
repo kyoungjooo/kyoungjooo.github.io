@@ -39,8 +39,8 @@ Relational DataBase Management System의 약자<br>
 관계형 데이터베이스는 열(Column)과 행(Row)으로 이루어진 (테이블) 형태로 저장한다.<br>
 테이블 간의 관계를 설정해서 관리하며, 각 행을 식별하기 위해 식별자가 필요하다.
 
-<small>열(column) : 같은 종류의 값을 가진 세로줄, 하나의 속성(attribute) 혹은 필드(field)</small><br>
-<small>행(row) : 실제 데이터 한 줄, 레코드(record), 모델링에서는 각 테이블의 행 데이터를 entity라고도 하는데 주로 그루핑 된 하나의 그룹을 entity라고 사용하는 것 같다.</small>
+<small>\* 열(column) : 같은 종류의 값을 가진 세로줄, 하나의 속성(attribute) 혹은 필드(field)</small><br>
+<small>\* 행(row) : 실제 데이터 한 줄, 레코드(record), 모델링에서는 각 테이블의 행 데이터 혹은 테이블을 entity라고 하는데 그루핑 된 하나의 그룹을 entity라고 사용한다고 이해하면 될 것 같다.</small>
 
 ## PK(기본키), FN(외래키)
 
