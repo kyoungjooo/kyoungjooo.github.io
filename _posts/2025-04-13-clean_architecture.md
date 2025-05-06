@@ -2,7 +2,7 @@
 title: "Clean Architecture/ DDD(도메인 주도 설계)"
 layout: single
 categories: database
-tag: [클린 아키텍처, Next]
+tag: [클린 아키텍처, next.js]
 toc: false
 author_profile: false
 search: true
