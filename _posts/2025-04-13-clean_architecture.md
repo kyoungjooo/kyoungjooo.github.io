@@ -19,12 +19,6 @@ Next.js 기반 프로젝트에서 클린 아키텍처(Clean Architecture) + 계�
 내부 계층은 외부 계층에 의존할 수 없으며, 외부 계층은 내부 계층에 의존해야한다.<br>
 의존성 방향 = 바깥 → 안쪽만 허용
 
-```jsx
-//구조 흐름
-UI → Controller → Service(UseCase) → Repository Interface → Infra 구현체
-//내부 계층(Infra)은 상위 계층(Service, Controller)에 의존할 수 없다.
-```
-
 🤔 이 과정에서 내부계층의 infra를 상위계층에서 사용하기 위해 IoC + DI (제어 역전 + 의존성 주입)이 필요하다.
 
 - IoC(Inversion of Control)제어 역전<br>
