@@ -11,9 +11,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: $text-color;
+  color: #e0e0e0;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.8;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -339,5 +339,5 @@ input[type="submit"],
 }
 
 .color_yellow {
-  color: #d8a731;
+  color: #ffe082;
 }
