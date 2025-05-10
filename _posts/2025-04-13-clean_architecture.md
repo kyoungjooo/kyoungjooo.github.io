@@ -58,20 +58,19 @@ app/ //사용자의 요청이 들어오는 Next.js의 페이지 컴포넌트
 ├── api/ //Controller (API 엔드포인트)
 │   └── categories/
 │       └── route.ts //client에게 요청 받고 UseCase 호출 후 응답 반환
-│                    // Next에서 app/api/route.ts 구조를 보고 자동으로 API endpoint 생성
 │
 application/ //서비스, 비즈니스 로직 실행 계층
-├── usecases/ //서비스 로직
+├── usecases/
 │   └── category/
-│       └── dto/ //화면(API)에 전달할 전용 데이터 구조 정의
+│       └── dto/ //요청/응답 구조 정의
 │           └── CategoryDto.ts
 │       └── GetCategoryListUsecase.ts //카테고리 리스트 조회 비즈니스 로직
 │
-domain/ //도메인, 업무 로직 계층
-├── entities/ //도메인 모델
-│   └── Category.ts //new로 인스턴스 만들어서 비즈니스 모델 (Entity) 정의
-├── repository/ //데이터 접근 인터페이스, 필요한 데이터 목록 선언
-│   └── CategoryRepository.ts //CategoryRepository interface 정의
+domain/ //도메인 계층 (비즈니스 규칙 중심)
+├── entities/ //핵심 비즈니스 모델 정의(Entity)
+│   └── Category.ts
+├── repository/ //무슨 데이터를 어떻게 요청할 수 있는지(인터페이스) 정의
+│   └── CategoryRepository.ts
 │
 infra/ //실제 구현 계층
 └── repositories/
