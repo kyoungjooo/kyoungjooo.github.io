@@ -16,16 +16,16 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 # Site Settings
 locale: "ko-KR"
-title: "TIL Note"
+title: "Dev Notes"
 title_separator: "|"
-subtitle: "Today I Learned"
+subtitle: " 느리지만 꾸준히..🐢.🐢"
 name: "KyoungJooLee"
 description: ""
 url: "https://kyoungjooo.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: "/assets/images/favicon.png"
+logo: #"/assets/images/favicon.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
